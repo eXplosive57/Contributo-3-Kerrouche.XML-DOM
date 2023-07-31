@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="catalogo">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="smartphone" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="smartphone">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="nome" minOccurs="1" maxOccurs="unbounded"/>
+        <xsd:element ref="marca"/>
+        <xsd:element ref="prezzo"/>
+        <xsd:element ref="batteria"/>
+        <xsd:element ref="descrizione" minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="img"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+
+  <xsd:element name="nome" type="string" />
+  <xsd:element name="marca" type="string"/>
+  <xsd:element name="prezzo" type="xsd:integer"/>
+  <xsd:element name="batteria" type="string"/>
+  <xsd:element name="descrizione" type="string"/>
+  <xsd:element name="img" type="string"/>
+
+</xsd:schema>
