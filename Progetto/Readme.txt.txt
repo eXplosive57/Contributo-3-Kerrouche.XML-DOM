@@ -1,4 +1,4 @@
-# Contributo 2 PHP-MySQL
+# Contributo 3 XML-DOM
 
 Componenti gruppo:
 - Ahmed Ilyas Kerrouche
@@ -9,7 +9,7 @@ Indirizzo Repository:
 Descrizione progetto:
 
 L'idea del progetto consiste nella realizzazione di un sorta di shop per Smartphone. Un utente una volta registrato verrá
-portato sulla homepage del sito dove potrá visualizzare le novitá del momento.L'utente puó decidere se acquistare o meno un dispositivo a seconda della quantitá. 
+portato sulla homepage del sito dove potrá visualizzare le novitá del momento.L'utente puó decidere se acquistare o meno un dispositivo dal catalogo, contenuti nel relativo file XML. 
 Una volta scelta la quantitá che si desidera, la si puó aggiungere al carrello. Verrete indirizzate nel carrello dove potrete vedere tutti gli articoli aggiunti con la relativa quantitá. 
 In qualsiasi momento é possibile procedere all'acquisto degli articoli, elimando dal carrello tutti i prodotti.
 
@@ -18,20 +18,10 @@ Per accedere con l'utente admin usare: <br>
   > Username: Admin <br>
   Password: Admin
 
-Le caratteristiche di PHP (e interazione con il DBMS MySQL) che si sono volute testare ed implementare in questo contributo sono state le seguenti:
+L'utente ADMIN, se loggato, può inserire uno smartphone al catalogo. L'inserimento avviene tramite un'opportuna form dalla quale, mediante opportuni script php, è possibile estrarre i dati da inserire negli appositi file XML.
 
-- registrazione, login e logout di un utente, con variabili di sessione.
+Le caratteristiche di XML (ed in particolare del modello DOM - Document Object Model) che si sono volute testare (ed implementare) in questo contributo sono state le seguenti:
 
-- creazione e connessione ad un database grazie all'interazione con il dbms MySQL;
-
-- creazione, popolamento e interrogazione di tabelle contenute in un database grazie all'interazione con il dbms MySQL;
-
-- esecuzione di script PHP nei quali vengono manipolati dati forniti dai risultati di alcune query;
-
-- esecuzione di script PHP con dati passati attraverso delle form;
-
-- esecuzione di script PHP con dati passati attraverso dei campi hidden;
-
-- esecuzione di script PHP per la creazione di pagine web dinamiche, ossia il cui contenuto varia dinamicamente in base alle circostanze e agli eventi:
-  - si pensi all'inserimento di una password errata in fase di login: comparirà un messaggio di errore nella pagina web.
-  - a seconda che si effettui il login con utente normale o Admin,  la navbar mostrerá contenuti differenti.
+- Visualizzazione dei dati contenuti in un file XML, da script PHP;
+- Ricerca di un elemento contenuto in un file XML, da script PHP;
+- Inserimento di un elemento contenuto in un file XML, da script PHP;
