@@ -4,7 +4,7 @@ Componenti gruppo:
 - Ahmed Ilyas Kerrouche
 
 Indirizzo Repository:
-- https://github.com/eXplosive57/Contributo-2-Kerrouche.PHP-MySQL
+- https://github.com/eXplosive57/Contributo-3-Kerrouche.XML-DOM
 
 Descrizione progetto:
 
